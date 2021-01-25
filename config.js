@@ -66,7 +66,7 @@ module.exports = kconfig = async (kill, message) => {
         const isGroupAdmins = isGroupMsg ? groupAdmins.includes(sender.id) : false
         const isBotGroupAdmins = isGroupMsg ? groupAdmins.includes(botNumber + '@c.us') : false
 		const chats = (type === 'chat') ? body : (type === 'image' || type === 'video') ? caption : ''
-        const ownerNumber = '55189****@c.us'
+        const ownerNumber = '5514991983652@c.us'
         const isOwn = sender.id
 	const isOwner = isOwn.includes(ownerNumber)
         global.pollfile = 'poll_Config_'+chat.id+'.json'
@@ -307,7 +307,7 @@ module.exports = kconfig = async (kill, message) => {
                 const mediaData = await decryptMedia(message, uaOverride)
                 var uplimg = './lib/media/img/imageupl.jpg'
                 await fs.writeFile(uplimg, mediaData)
-				const sdimg = await imgbbUploader("API DO SITE IMGBB", uplimg) // Bote uma api do imgbb pras suas fotos n irem pra minha conta
+				const sdimg = await imgbbUploader("41ffd8c614a37e08f0ee3906d471fa25", uplimg) // Bote uma api do imgbb pras suas fotos n irem pra minha conta
 				console.log(sdimg.url_viewer)
 				await kill.reply(from, `*OBS!* _Essa link tem duração de 7 dias, após isso a imagem será automaticamente deletada do servidor._\n\n${sdimg.url_viewer}`, id)
 			} else {
