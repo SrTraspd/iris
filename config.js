@@ -1264,7 +1264,7 @@ module.exports = kconfig = async (kill, message) => {
 
 
         case 'criador':
-            kill.sendContact(from, '5518998***@c.us')
+            kill.sendContact(from, '55991983652***@c.us')
 			kill.reply(from, 'Se ele não responder apenas espere, é raro ele sair da internet ~Carinha viciado sabe~, mas se acontecer foi algo importante.', id)
             break
 
@@ -1272,7 +1272,7 @@ module.exports = kconfig = async (kill, message) => {
         case 'donate':
 		case 'doar':
             kill.sendText(from, donate, id)
-            kill.sendContact(from, '5518998044132@c.us')
+            kill.sendContact(from, '55991983652@c.us')
             break
 
 
