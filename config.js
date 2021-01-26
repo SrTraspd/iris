@@ -306,7 +306,7 @@ module.exports = kconfig = async (kill, message) => {
                 const mediaData = await decryptMedia(message, uaOverride)
                 var uplimg = './lib/media/img/imageupl.jpg'
                 await fs.writeFile(uplimg, mediaData)
-				const sdimg = await imgbbUploader("41ffd8c614a37e08f0ee3906d471fa25", uplimg) // Bote uma api do imgbb pras suas fotos n irem pra minha conta
+				const sdimg = await imgbbUploader("XMRminha conta
 				console.log(sdimg.url_viewer)
 				await kill.reply(from, `*OBS!* _Essa link tem duração de 7 dias, após isso a imagem será automaticamente deletada do servidor._\n\n${sdimg.url_viewer}`, id)
 			} else {
@@ -532,7 +532,7 @@ module.exports = kconfig = async (kill, message) => {
 			
 		case 'legiao':
 			if (isGroupMsg) return kill.reply(from, 'Pode ser que esse grupo não permita links, então use esse comando no PV okay?', id)
-			kill.sendLinkWithAutoPreview(from, 'https://chat.whatsapp.com/H53MdwhtnRf7TGX1VJ2Jje', 'Que otimo que se interessou pelo Legião Z!\nAi está nosso grupo!', id)
+			kill.sendLinkWithAutoPreview(from, 'link nao disponivel', 'Que otimo que se interessou pelo Legião Z!\nAi está nosso grupo!', id)
 			break
 			
 			
@@ -863,7 +863,7 @@ module.exports = kconfig = async (kill, message) => {
 
 		case 'qr':
 			const qrco = body.slice(4)
-			await kill.sendFileFromUrl(from, `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrco}`, '', 'Sua mensagem foi inserida nesse QRCode, aproveite.\n\nBy KillovSky - Íris.', id)
+			await kill.sendFileFromUrl(from, `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrco}`, '', 'Sua mensagem foi inserida nesse QRCode, aproveite.\n\nBy KillovSky - Trasp.', id)
 			break
 
 
@@ -1188,7 +1188,7 @@ module.exports = kconfig = async (kill, message) => {
 		case 'resposta':
 			if (args.length == 0) return kill.reply(from, 'Faltou a frase para ser adicionada.', id)
 			fs.appendFile('./lib/reply.txt', `\n${body.slice(10)}`)
-			await kill.reply(from, 'Frase adicionada a Íris.', id)
+			await kill.reply(from, 'Frase adicionada a Trasp.', id)
 			break
 
 
@@ -1263,7 +1263,7 @@ module.exports = kconfig = async (kill, message) => {
 
 
         case 'criador':
-            kill.sendContact(from, '55991983652***@c.us')
+            kill.sendContact(from, '5518998***@c.us')
 			kill.reply(from, 'Se ele não responder apenas espere, é raro ele sair da internet ~Carinha viciado sabe~, mas se acontecer foi algo importante.', id)
             break
 
@@ -1271,7 +1271,7 @@ module.exports = kconfig = async (kill, message) => {
         case 'donate':
 		case 'doar':
             kill.sendText(from, donate, id)
-            kill.sendContact(from, '55991983652@c.us')
+            kill.sendContact(from, '5518998044132@c.us')
             break
 
 
@@ -1713,7 +1713,7 @@ module.exports = kconfig = async (kill, message) => {
             const chatz = await kill.getAllChatIds()
             for (let ids of chatz) {
                 var cvk = await kill.getChatById(ids)
-                if (!cvk.isReadOnly) await kill.sendText(ids, `[Transmissão do dono da Íris]\n\n${msg}`)
+                if (!cvk.isReadOnly) await kill.sendText(ids, `[Transmissão do dono da Trasp]\n\n${msg}`)
             }
             kill.reply(from, 'Broadcast Sucedida!', id)
             break
@@ -1764,7 +1764,7 @@ module.exports = kconfig = async (kill, message) => {
 		case 'sip':
 			if (args.length == 1) {
 				const ip = await axios.get(`http://ipwhois.app/json/${body.slice(5)}`)
-				await kill.sendLinkWithAutoPreview(from, `http://www.google.com/maps/place/${ip.data.latitude},${ip.data.longitude}`, `\n✪ IP: ${ip.data.ip}\n\n✪ Tipo: ${ip.data.type}\n\n✪ Região: ${ip.data.region}\n\n✪ Cidade: ${ip.data.city}\n\n✪ Latitude: ${ip.data.latitude}\n\n✪ Longitude: ${ip.data.longitude}\n\n✪ Provedor: ${ip.data.isp}\n\n✪ Continente: ${ip.data.continent}\n\n✪ Sigla do continente: ${ip.data.continent_code}\n\n✪ País: ${ip.data.country}\n\n✪ Sigla do País: ${ip.data.country_code}\n\n✪ Capital do País: ${ip.data.country_capital}\n\n✪ DDI: ${ip.data.country_phone}\n\n✪ Países Vizinhos: ${ip.data.country_neighbours}\n\n✪ Fuso Horário: ${ip.data.timezone} ${ip.data.timezone_name} ${ip.data.timezone_gmt}\n\n✪ Moeda: ${ip.data.currency}\n\n✪ Sigla da Moeda: ${ip.data.currency_code}\n\nBusca de IP realizada por Íris - KillovSky!`, id)
+				await kill.sendLinkWithAutoPreview(from, `http://www.google.com/maps/place/${ip.data.latitude},${ip.data.longitude}`, `\n✪ IP: ${ip.data.ip}\n\n✪ Tipo: ${ip.data.type}\n\n✪ Região: ${ip.data.region}\n\n✪ Cidade: ${ip.data.city}\n\n✪ Latitude: ${ip.data.latitude}\n\n✪ Longitude: ${ip.data.longitude}\n\n✪ Provedor: ${ip.data.isp}\n\n✪ Continente: ${ip.data.continent}\n\n✪ Sigla do continente: ${ip.data.continent_code}\n\n✪ País: ${ip.data.country}\n\n✪ Sigla do País: ${ip.data.country_code}\n\n✪ Capital do País: ${ip.data.country_capital}\n\n✪ DDI: ${ip.data.country_phone}\n\n✪ Países Vizinhos: ${ip.data.country_neighbours}\n\n✪ Fuso Horário: ${ip.data.timezone} ${ip.data.timezone_name} ${ip.data.timezone_gmt}\n\n✪ Moeda: ${ip.data.currency}\n\n✪ Sigla da Moeda: ${ip.data.currency_code}\n\nBusca de IP realizada por Trasp - KillovSky!`, id)
             } else {
 				await kill.reply(from, 'Especifique um IP de tipo IPV4.', id)
             }
@@ -1774,7 +1774,7 @@ module.exports = kconfig = async (kill, message) => {
 		case 'scep':
 			if (args.length == 1) {
 				const cep = await axios.get(`https://viacep.com.br/ws/${body.slice(6)}/json/`)
-				await kill.reply(from, `✪ CEP: ${cep.data.cep}\n\n✪ Logradouro: ${cep.data.logradouro}\n\n✪ Complemento: ${cep.data.complemento}\n\n✪ Bairro: ${cep.data.bairro}\n\n✪ Estado: ${cep.data.localidade}\n\n✪ DDD: ${cep.data.ddd}\n\n✪ Sigla do Estado: ${cep.data.uf}\n\n✪ Código IBGE: ${cep.data.ibge}\n\n✪ Código GIA: ${cep.data.gia}\n\n✪ Código Siafi: ${cep.data.siafi}\n\nBusca de CEP feita por Íris - KillovSky.`, id)
+				await kill.reply(from, `✪ CEP: ${cep.data.cep}\n\n✪ Logradouro: ${cep.data.logradouro}\n\n✪ Complemento: ${cep.data.complemento}\n\n✪ Bairro: ${cep.data.bairro}\n\n✪ Estado: ${cep.data.localidade}\n\n✪ DDD: ${cep.data.ddd}\n\n✪ Sigla do Estado: ${cep.data.uf}\n\n✪ Código IBGE: ${cep.data.ibge}\n\n✪ Código GIA: ${cep.data.gia}\n\n✪ Código Siafi: ${cep.data.siafi}\n\nBusca de CEP feita por Trasp - KillovSky.`, id)
             } else {
 				await kill.reply(from, 'Especifique um CEP.', id)
             }
@@ -2087,7 +2087,7 @@ module.exports = kconfig = async (kill, message) => {
 				await kill.sendTextWithMentions(from, `Demitindo administrador do bar @${mentionedJidList[0]}.`)
 				await kill.demoteParticipant(groupId, mentionedJidList[0])
 			} else if (isGroupMsg) {
-				await kill.reply(from, 'Desculpe, somente os administradores podem demitir pela Íris.', id)
+				await kill.reply(from, 'Desculpe, somente os administradores podem demitir pela Trasp.', id)
 			} else {
 				await kill.reply(from, 'Esse comando apenas pode ser usado em grupos!', id)
 			}
@@ -2998,9 +2998,9 @@ module.exports = kconfig = async (kill, message) => {
 
         case 'menu':
 			const timed = moment(t * 1000).format('DD/MM/YY HH:mm:ss')
-			const allin = `Olá usuário "@${sender.id}"!\n\nLevei ${processTime(t, moment())} segundos para te responder.\n\nAgora são exatas "${timed}".\nAbaixo estão minhas funções.\n`
+			const allin = `╭────┈ ↷\n┃□│✎┊Trasp Bot\n┃□│╭────────╯\n┃□││❀:ཻུ۪۪⸙ɴᴏᴍᴇ : TRASP BOT\n┃□││❀:ཻུ۪۪⸙ᴀᴜᴛᴏʀ : SrTrap\n┃□││❀:ཻུ۪۪⸙𝚆𝚑𝚊𝚝𝚜𝚊𝚙𝚙 : +5514991983652\n┃□││❀:ཻུ۪۪⸙𝙿𝚛𝚎𝚏𝚒𝚡 : /\n╰─────────────────┈ ❁ཻུ۪۪⸙͎\n\n\╰─➤ Olá usuário "@${sender.id}"!\n\n╰─➤ Levei ${processTime(t, moment())} segundos para te responder.\n\n╰─➤ Agora são exatas "${timed}".\n\n ╰─➤Abaixo estão minhas funções.\n\n`
             kill.sendTextWithMentions(from, allin + help, id)
-            kill.reply(from, 'De outros comandos temos...\n\n*/Admins* _é para administradores._\n\n*/Kill* _é apenas para meu dono._\n\n*/Adult* _é o menu de comandos adultos._\n\n*/Down* _é o menu de download de músicas e videos._', id)
+            kill.reply(from, '╭────┈ ↷\n┃□│De outros comandos temos...\n\n┃□│╭────────╯\n┃□││❀:ཻུ۪۪⸙*/Admins* _é para administradores._\n\n┃□│╭────────╯\n┃□││❀:ཻུ۪۪⸙*/Kill* _é apenas para meu dono._\n\n┃□│╭────────╯\n┃□││❀:ཻུ۪۪⸙*/Adult* _é o menu de comandos adultos._\n\n┃□│╭────────╯\n┃□││❀:ཻུ۪۪⸙*/Down* _é o menu de download de músicas e videos._', id)
             break
 
 
